@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>okimono　はなのや</title>
+
+  <link rel="stylesheet" href="./css/reset.css">
+
+  <!-- font awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <!-- slick -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+
+  <!-- my css -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="global-nav">
+      <h1>
+        <div class="logo"></div>
+      </h1>
+      <ul class="category hover-flash modal" id='category'>
+        <!--カテゴリーごと-->
+        <li data-target="new"><a href="#">新着</a></li>
+        <li data-target="wear"><a href="kimono/">着物</a></li>
+        <li data-target="outer"><a href="haori/">羽織</a></li>
+        <li data-target="band"><a href="obi/">帯</a></li>
+        <li data-target="inner"><a href="jyuban/">長襦袢</a></li>
+        <li data-target="shoes"><a href="geta/">下駄・草履</a></li>
+        <li data-target="accessorie"><a href="komono/">雑貨小物</a></li>
+      </ul>
+      <ul class="cart-items" id="cart-js">
+        <li>
+          <i class="fas fa-shopping-cart">
+           <div id="num-js">0</div>
+          </i>
+        </li>
+      </ul>
+    </nav>
+    <!-- modal menu -->
+    <article>
+      <div class="none" id="cart-list">
+        <h2>現在カートに入っている商品</h2>
+        <p class="alert" id="alert-js">カートに商品が入っていません</p>
+          <ul class="cart-item_list" id="item-list-js">
+          </ul>
+        <div class="close-btn" id="cart-close">閉じる</div>
+      </div>
+    </article>
+  </header>
+  <main>
+    <section>
+      <div>
+        <ul class="sliders">
+          <li>
+            <img src="./img/slider01.png" alt="main-slider01">
+          </li>
+          <li>
+            <img src="./img/slider02.png" alt="main-slider02">
+          </li>
+          <li>
+            <img src="./img/slider03.png" alt="main-slider03">
+          </li>
+          <li>
+            <img src="./img/slider04.png" alt="main-slider04">
+          </li>
+          <li>
+            <img src="./img/slider05.png" alt="main-slider05">
+          </li>
+        </ul>
+      </div>
+      <section class="select-content">
+        <section>
+          <div class="select-item new active">
+            <h2 class="fade-in">新着</h2>
+            <ul>
+              <li class="fadein">
+                <div class="item" data-items="items01">
+                  <img src="./img/obi01.png" alt="">
+                  <p>1000円<br>半幅帯にお直ししました</p>
+                </div>
+                <button class="cart-in-btn">カートに追加</button>
+              </li>
+              <li class="fadein">
+                <div class="item" data-items="items02">
+                  <img src="./img/haori03.png" alt="">
+                  <p>1000円<br>花尽くし羽織</p>
+                </div>
+                <button class="cart-in-btn">カートに追加</button>
+              </li>
+              <li class="fadein">
+                <div class="item" data-items="items03">
+                  <img src="./img/kimono03.png" alt="">
+                  <p>1000円<br>変わり独鈷藤柄</p>
+                </div>
+                <button class="cart-in-btn">カートに追加</button>
+              </li>
+              <li class="fadein">
+                <div class="item" data-items="items04">
+                  <img src="./img/sonota07.png" alt="">
+                  <p>1000円<br>かわいい裏地を着けて一点ものに</p>
+                </div>
+                <button class="cart-in-btn">カートに追加</button>
+              </li>
+              <li class="fadein">
+                <div class="item" data-items="items05">
+                  <img src="./img/zouri05.png" alt="">
+                  <p>1000円<br>ノーマルな使いやすい柄</p>
+                </div>
+                <button class="cart-in-btn">カートに追加</button>
+              </li>
+              <li class="fadein">
+                <div class="item" data-items="items06">
+                  <img src="./img/nagajyuban05.png" alt="">
+                  <p>1000円<br>きれい色の長襦袢 状態も良いです</p>
+                </div>
+                <button class="cart-in-btn">カートに追加</button>
+              </li>
+              <li class="fadein">
+                <div class="item" data-items="items07">
+                  <img src="./img/sonota05.png" alt="">
+                  <p>1000円<br>千鳥の帯どめ。手作りです</p>
+                </div>
+                <button class="cart-in-btn">カートに追加</button>
+              </li>
+              <li class="fadein">
+                <div class="item" data-items="items08">
+                  <img src="./img/haori08.png" alt="">
+                  <p>1000円<br>疋田の羽織</p>
+                </div>
+                <button class="cart-in-btn">カートに追加</button>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </section>
+  </main>
+  <footer class="fotter-inner">
+    <aside class="sns">
+      <ul class="fade-flash">
+        <li><a href="">登録する</a></li>
+        <li><a href="">FOLLOW US</a></li>
+        <li><a href=""><i class="fab fa-facebook-square"></i>Facebook</a></li>
+        <li><a href=""><i class="fab fa-line"></i>LINE</a></li>
+        <li><a href=""><i class="fab fa-instagram"></i>Instagram</a></li>
+        <li><a href=""><i class="fab fa-youtube-square"></i>Youtube</a></li>
+      </ul>
+    </aside>
+    <aside class="conpany">
+      <ul class="fade-flash">
+        <a href="">
+          <li>企業情報
+        </a></li>
+        <a href="">
+          <li>採用情報
+        </a></li>
+        <a href="">
+          <li>グループについて
+        </a></li>
+      </ul>
+    </aside>
+    <aside class="customer">
+      <ul class="fade-flash">
+        <li><a href="">ヘルプ</a></li>
+        <li><a href="">カスタマーサービス</a></li>
+        <li><a href="">店舗検索</a></li>
+        <li><a href="">法規&プライバシー</a></li>
+        <li><a href="">お問い合わせ</a></li>
+      </ul>
+    </aside>
+    <small></small>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="./js/base.js"></script>
+</body>
+
+</html>

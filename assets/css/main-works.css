@@ -1,0 +1,136 @@
+/* main-works -----------------------------------*/
+.mv {
+  height: auto;
+}
+
+.title-logo {
+  font-size: 12rem;
+  color: var(--allWhite);
+  background-color: var(--consept_color);
+
+}
+
+.main-works {
+  margin-top: 10rem;
+  padding: 5rem 0;
+  color: var(--consept_color);
+  background-color: var(--allWhite);
+}
+
+.main-works::before{
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 1rem 0 1rem;
+}
+
+.main-works-list{
+  width: 70%;
+  margin: 4rem auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-works-list > li{
+  width: 45%;
+  object-fit: cover;
+  position: relative;
+  z-index: 10;
+  padding: 1rem;
+  transition: transform 500ms 0s ease;
+  margin-bottom: 6rem;
+}
+
+.main-works-list > li:hover {
+  transform: scale(1.1);
+}
+
+.main-works-list a{
+  display: block;
+  text-decoration: none;
+}
+
+.main-works-list p{
+  color: var(--consept_color);
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.link-btn.return{
+  outline: 5px solid var(--consept_color);
+  width: 300px;
+  margin: 5rem auto 0;
+}
+
+.site-footer{
+  background-color: var(--consept_color);
+  color: var(--allWhite);
+}
+/* main-works tab ------------------------------------------------*/
+@media screen and (max-width:1024px){
+
+  .title-logo {
+    font-size: 10rem;
+  }
+
+  .main-works-list > li{
+    width: 45%;
+    margin: 2.5rem auto;
+  }
+
+}
+
+/* main-works  mobail ------------------------------------------*/
+@media screen and (max-width:480px){
+  .title-logo {
+    font-size: 5rem;
+  }
+  
+  .main-works {
+    margin-top: 5rem;
+  }
+  
+  .main-works-list{
+    width: 100%;
+    display: block;
+    margin-top: 5rem;
+  }
+  
+  .main-works-list > li{
+    width: 85%;
+    margin: 2rem auto;
+    object-fit: cover;
+    position: relative;
+    z-index: 10;
+    padding: 0;
+    transition: transform 500ms 0s ease;
+  }
+  
+  .main-works-list > li:hover {
+    transform: scale(1.1);
+  }
+  
+  .main-works-list a{
+    display: block;
+    text-decoration: none;
+  }
+  
+  .main-works-list p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .link-btn.return{
+    outline: 5px solid var(--allWhite);
+    width: 300px;
+    margin: 5rem auto 0;
+  }
+  
+  .site-footer{
+    background-color: var(--allWhite);
+    color: var(--consept_color);
+  }
+}

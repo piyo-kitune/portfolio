@@ -1,0 +1,831 @@
+/* color */
+
+/* common style */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  width: 100%;
+  opacity: .85;
+}
+
+li{
+  list-style: none;
+}
+
+html{
+  background-color: rgba(00,51,00,1);
+}
+
+@font-face {
+  font-family: 'fonts';
+  src: url('../../../../assets/fonts/FormalScript.otf');
+}
+
+body{
+  font-family: 'fonts','YuMincho','Yu Mincho';
+  background-color: rgba(255,255,204,1);
+  color: rgba(232,236,239,1);
+}
+
+.none{
+  display: none;
+}
+
+.pc{
+  display: none;
+}
+
+/* header */
+nav{
+  background-color: rgba(153,153,102,1);
+  height: 5rem;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  font-size: 18px;
+}
+
+a{
+  color: #fff;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+nav ul{
+  width: 50%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0 0 50%;
+}
+
+nav div{
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+}
+
+/* main */
+/* monthly */
+.top-visual{
+  height: 120vh;
+  width: 100%;
+  background-image: url("../img/top03.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  z-index: -1;
+  opacity: .9;
+}
+
+h1{
+  width: 40%;
+  margin: 10rem auto 0;
+}
+
+.logo{
+  opacity: 1;
+}
+
+.monthly{
+  margin: 60rem 0 0 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.monthly-inner{
+  background-color: rgba(00,51,00,1);
+}
+
+h2{
+  font-size: 40px;
+  padding: 5rem 0 2rem 5rem;
+}
+
+.monthly p{
+  position: absolute;
+  z-index: 10;
+  margin: 0 0 0 2rem;
+  font-size: 60px;
+}
+
+.monthly img{
+  width: 40rem;
+  height: 30rem;
+  border: solid 2px rgba(102,51,00,1);
+  object-fit: cover;
+}
+
+.upper,
+.lower-middle{
+  margin: 0 0 0 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.upper-middle,
+.lower{
+  margin: 0 5rem 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*  restaurant　*/
+.restaurant{
+  width: 100%;
+  margin: 191.25rem 0 0 0;
+  position: absolute;
+}
+
+.restaurant-inner{
+  background-image: url("../img/herb-inner1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.menu{
+  margin: 67rem 0 0 0;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu img{
+  width: 30rem;
+  height: 18rem;
+  object-fit: cover;
+  margin: 0 2rem 0 0;
+}
+
+.menu-left{
+  margin: -85rem 0 0 0;
+}
+
+.menu-left li{
+  margin: 0 0 18rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-rigth{
+  margin: -49rem 0 0 -65rem;
+}
+
+.menu-rigth li{
+  margin: 0 0 18rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* caffee */
+.caffee{
+  width: 100%;
+  margin: 436rem 0 0 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.tea-inner{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(00,51,00,1);
+  background-image: url("../img/tea-inner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h3{
+  font-size: 30px;
+  margin: 0 0 0 10rem;
+  padding: 2rem 0 5rem 0;
+}
+
+.bg-screen{
+  background-color: rgba(00,51,00,1);
+}
+
+.caffee img{
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.caffee p{
+  text-align: center;
+  font-size: 25px;
+  margin: 1rem 0 4rem 0;
+}
+
+.dessert-inner{
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/herb-inner2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.dessert-list p{
+  margin: 1rem 0 0 0;
+}
+
+.items{
+  margin: 0 0 15rem 0;
+}
+
+.dessert-left{
+  margin: 0 0 0 15%;
+}
+
+.dessert-rigth{
+  margin: 0 15% 0 0;
+}
+
+/* residents */
+.residents{
+  width: 100%;
+  margin: 779rem 0 0 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.residents-inner{
+  width: 100%;
+  background-color: rgba(00,51,00,1);
+  background-image: url("../img/street-inner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 0 0 5rem 0;
+}
+
+.residents img{
+  height: 400px;
+  object-fit: cover;
+}
+
+.residents .bg-screen{
+  width: 30%;
+}
+
+.residents .flex{
+  justify-content: stretch;
+}
+
+.residents-items{
+  width: 100%;
+}
+
+.residents-items p{
+  width: 20%;
+  text-align: center;
+}
+
+.residents-items .bg-screen{
+  margin: 1rem;
+}
+
+/* hotel */
+.hotel{
+  width: 100%;
+  margin: 930rem 0 0 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.hotel-inner{
+  width: 100%;
+  height: 100%;
+  padding: 0 0 5rem 0;
+  background-image: url("../img/hotel-inner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hotel p{
+  text-align: center;
+  margin: 3rem;
+  font-size: 20px;
+}
+
+.hotel .bg-screen{
+  margin: 3rem 0;
+}
+
+.hotel.bg-screen{
+  width: 430px;
+  height: 300px;
+  object-fit: cover;
+}
+
+footer{
+  width: 100%;
+  height: 30rem;
+  background-color: rgba(153,153,102,.8);
+  color: #fff;
+  position: absolute;
+  z-index: 10;
+  margin: 995.5rem 0 0 0;
+  font-family: "YuMincho";
+  font-size: 20px;
+}
+
+aside{
+  text-align: center;
+}
+
+/* tab-----------------------------------*/
+@media screen and (max-width:1024px){
+  img{
+    max-width: 1024px;
+  }
+
+  nav ul{
+    width: 70%;
+    margin: 0 0 0 25%;
+  }
+  /* main */
+  /* monthly */
+  
+  .logo{
+    width: 100%;
+    margin: 5rem 0 0 0;
+  }
+
+  h2{
+    padding: 5rem 0 4rem 2rem;
+  }
+
+  .monthly p{
+    z-index: 10;
+  }
+
+  .monthly img{
+    width: 250px;
+    height: 20rem;
+  }
+
+  .upper,
+  .lower-middle{
+    margin: 0 0 0 2rem;
+  }
+
+  .upper-middle,
+  .lower{
+    margin: 0 2rem 0 0;
+  }
+
+  /*  restaurant　*/
+  .restaurant{
+    margin: 153rem 0 0 0;
+  }
+
+  .restaurant-inner{
+    width: 1024px;
+    height: 100%;
+  }
+
+  .menu{
+    width: 100%;
+    padding: 1rem;
+    font-size: 22px;
+  }
+
+  .menu img{
+    width: 50%;
+    height: 18rem;
+    object-fit: cover;
+  }
+
+  .menu-left{
+    margin: -85rem 0 0 -20rem;
+  }
+  
+  .menu-rigth{
+    margin: -49rem 0 0 -75rem;
+  }
+
+  .menu p{
+    margin: 0 0 0 -2rem;
+  }
+
+  /* caffee */
+  .caffee{
+    margin: 390rem 0 0 0;
+  }
+
+  h3{
+    font-size: 30px;
+    margin: 0 0 0 20rem;
+    padding: 3rem 0;
+  }
+
+  .tea-item{
+    align-items: flex-start;
+  }
+
+  .caffee .bg-screen{
+    height: 250px;
+  }
+
+  .caffee img{
+    width: 260px;
+    height: 250px;
+  }
+
+  .caffee p{
+    font-size: 18px;
+    margin: 0 .5rem 4rem;
+  }
+
+  .dessert.bg-screen{
+    height: 250px;
+  }
+
+  .dessert-list p{
+    margin: 1rem 0 10rem 0;
+  }
+
+  .dessert-left{
+    margin: 0 0 0 5rem;
+  }
+
+  .dessert-left img{
+    margin: 0 0 15rem 0;
+  }
+
+  .dessert-rigth{
+    margin: 0 5rem 0 0;
+  }
+
+  .dessert-rigth img{
+    margin: 0 0 15rem 0;
+  }
+
+  .residents{
+    margin: 665rem 0 0 0;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .residents-inner{
+    padding: 0 0 6rem 0;
+  }
+
+  .residents-items{
+    margin: auto;
+  }
+
+  .residents img{
+    width: 250px;
+    height: 200px;
+  }
+
+  .flex-text{
+    width: 70%;
+    font-size: 17px;
+    padding: 0;
+  }
+
+  .flex-text p{
+    padding: 0 0 100px 0;
+  }
+
+  .left-text{
+    text-align: right;
+  }
+
+  .left-image{
+    margin: 0;
+  }
+
+  .hotel{
+    width: 100%;
+    margin: 756rem 0 0 0;
+    position: absolute;
+    z-index: 10;
+  }
+
+  footer{
+    width: 100%;
+    height: 30rem;
+    background-color: rgba(153,153,102,.8);
+    color: #fff;
+    position: absolute;
+    z-index: 10;
+    margin: 810.5rem 0 0 0;
+    font-family: "YuMincho";
+    font-size: 20px;
+  }
+
+  aside{
+    text-align: center;
+  }
+
+}
+
+/* mb-------------------------------------*/
+@media screen and (max-width:480px){
+ .mb{
+   display: none;
+ }
+
+ .pc{
+   display: block;
+ }
+
+   /* header */
+  nav{
+    height: 4rem;
+    width: 20%;
+    font-size: 12px;
+  }
+
+  nav img{
+    width: 90%;
+    margin: 0 0 0 .5rem;
+  }
+  /* main */
+  /* monthly */
+    h1{
+    width: 100%;
+    margin: 5rem 0 0 0;
+  }
+
+  .top-visual{
+    height: 120vh;
+    width: 100%;
+    margin: 0;
+  }
+
+  .monthly{
+    margin: 45rem 0 0 0;
+  }
+
+  h2{
+    font-size: 30px;
+    padding: 2rem 0 0 1rem;
+  }
+
+
+  .monthly p{
+    margin: 0 0 0 1.5rem;
+    font-size: 40px;
+    font-weight: normal;
+  }
+
+  .monthly img{
+    width: 23rem;
+    height: 6rem;
+  }
+
+  .upper,
+  .lower-middle{
+    display: block;
+    margin: 0 0 0 2rem;
+  }
+
+  .upper-middle,
+  .lower{
+    display: block;
+    margin: 0 2rem 0 0;
+  }
+
+  /*  restaurant　*/
+  .restaurant{
+    margin: 122.25rem 0 0 0;
+  }
+
+  .restaurant-inner{
+    margin: 0;
+    background-image: url("../img/herb-inner-mb1.png");
+  }
+
+  .menu{
+    width: 100%;
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .menu img{
+    width: 12rem;
+    height: 8rem;
+    margin: 0 2rem 0 0;
+    object-fit: cover;
+  }
+
+  .menu-left{
+    margin: 0;
+  }
+
+  .menu-left li{
+    margin: 0 0 8rem -18rem;
+  }
+
+  .menu-rigth{
+    margin: 0;
+  }
+
+  .menu-rigth li{
+    margin: 8rem 0 0 -82rem;
+  }
+
+  .menu-rigth p{
+    margin: 0 0 0 2rem;
+  }
+
+  .menu-rigth p{
+    margin: 0 0 0 -60rem;
+  }
+
+  /* caffee */
+  .caffee{
+    width: 100%;
+    margin: 223.5rem 0 0 0;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .tea-inner{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(00,51,00,1);
+    background-image: url("../img/tea-inner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  h3{
+    font-size: 25px;
+    margin: 0 0 0 4rem;
+    padding: 2rem 0 1rem;
+  }
+
+  .caffee .bg-screen{
+    width: 480px;
+    height: 150px;
+  }
+
+  .caffee img{
+    width: 480px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .caffee p{
+    text-align: center;
+    font-size: 18px;
+    padding: 1rem 0 2rem 0;
+    margin: 0;
+  }
+
+  .tea-item {
+    display: block;
+  }
+
+  .dessert img{
+    width: 200px;
+    height: 150px;
+  }
+
+  .dessert .bg-screen{
+    width: 200px;
+    height: 150px;
+  }
+
+  .dessert-list p{
+    margin: 2rem 0 6rem 0;
+  }
+
+  .dessert-left{
+    margin: 0 0 0 0rem;
+  }
+
+  .dessert-left img{
+    margin: 0 0 12rem 0;
+  }
+
+  .dessert-rigth{
+    margin: 0 0 0 -5rem;
+  }
+
+  .dessert-rigth img{
+    margin: 0 0 12rem 0;
+  }
+
+  .residents{
+    margin: 550rem 0 0 0;
+  }
+
+   .residents .flex{
+     display: block;
+   }
+
+  .residents-items{
+    margin: 0;
+  }
+
+  .residents-items p{
+    width: 100%;
+    margin: 1rem 0 2rem 0;
+  }
+
+  .residents .bg-screen{
+    width: 300px;
+    height: 200px;
+    margin: 1rem auto;
+  }
+
+  .residents img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .flex-text{
+    width: 100%;
+    font-size: 12px;
+    padding: 0;
+    display: block;
+    position: absolute;
+  }
+
+  .left-text{
+    text-align: center;
+    padding: 18rem 18rem 0 0;
+  }
+
+  .left-text p{
+    padding: 0 0 150px 0;
+  }
+
+  .rigth-text{
+    text-align: center;
+    padding: 18rem 5rem 0 0;
+  }
+
+  .rigth-text p{
+    padding: 0 0 150px 0;
+  }
+
+  .left-image{
+    margin: 0;
+    padding: 0 2rem 0 0;
+  }
+
+  .hotel{
+    margin: 740rem 0 0 0;
+  }
+
+  .hotel .flex{
+    display: block;
+  }
+
+  .hotel p{
+    margin: 3rem;
+    font-size: 15px;
+  }
+
+  footer{
+    height: 30rem;
+    margin: 909.75rem 0 0 0;
+    font-size: 15px;
+    display: block;
+  }
+  
+  footer li{
+    margin: 0;
+  }
+
+  aside{
+    font-size: 18px;
+    margin: 3rem 0 0 0;
+  }
+}

@@ -1,0 +1,560 @@
+/* color set*/
+:root{
+  --overray: rgba(255,255,255,.5);
+  --maincolor: #eee;
+  --subcolor: #777;
+  --blackcolor: #404040	;
+}
+
+/* common styles*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color:  var(--MainYellow);
+}
+
+img{
+  max-width: 100%;
+  position: relative;
+  object-fit: cover;
+}
+
+@font-face {
+  font-family: 'fonts';
+  src: url('../../../../assets/fonts/FormalScript.otf');
+}
+
+
+body{
+  font-family: 'YuMincho','Yu Mincho';
+  color: var(--blackcolor);
+  background-color: var(--maincolor);
+}
+
+li{
+  list-style: none;
+}
+
+.mb{
+  display: none;
+}
+
+@media screen and (max-width:1024px){
+  body{
+    max-width: 1024px;
+    height: auto;
+    max-height: 100%;
+  }
+  
+  img{
+    max-width:1024px;
+    height: auto;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width:480px){
+  body{
+    max-width: 480px;
+    height: auto;
+    max-height: 100%;
+  }
+  
+  img{
+    max-width: 480px;
+    height: auto;
+    max-height: 100%;
+  }
+  
+  .mb{
+    display: block;
+  }
+  
+  .pc{
+    display: none;
+  }
+}
+
+/* gloval-nav */
+.gloval-nav{
+  width: 100%;
+  height: 5rem;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--overray);
+  align-items: center;
+}
+
+.logo-1{
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: .5rem 0 0 1rem;
+}
+
+.cart-items{
+  color: var(--subcolor);
+  font-size: 30px;
+  margin: 0 10% 0 0;
+}
+
+.fa-shopping-cart{
+  font-size: 30px;
+  position: relative;
+}
+
+#num-js{
+  position: absolute;
+  bottom: 50%;
+  left: 100%;
+  font-weight: lighter;
+}
+
+
+/* modal---------------------------------*/
+.modal-menu{
+  width: 70vw;
+  height: 45vw;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--maincolor);
+  position: fixed;
+  z-index: 40;
+  text-align: center;
+  display: none;
+}
+
+.modal-menu h2{
+  margin: 2rem;
+  font-size: 30px;
+}
+
+.modal-menu p{
+  font-size: 20px;
+}
+
+.close-btn{
+  width: 12%;
+  top: 90%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%);
+  padding: 1rem;
+  color: var(--maincolor);
+  background-color: var(--subcolor);
+}
+
+.item-list li{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.item-list li > div{
+  width: 100%;
+  height: 100%;
+}
+
+.item-list img{
+  width: 50%;
+}
+
+.count-set{
+  width: 100%;
+}
+
+.numeric{
+  width: 20%;
+}
+
+.qty{
+  font-size: 20px;
+  margin: 0 2rem;
+  padding: 2rem;
+}
+
+article > h1 {
+  font-size: 50px;
+  margin: 0 0 0 5rem;
+}
+/* main */
+.main-slider h2{
+  margin: 6rem 0 0 2rem;
+  font-size: 40px;
+  font-family: 'fonts';
+}
+
+.sliders{
+  width: 100%;
+}
+
+.slick-track img{
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.sliders p{
+  font-size: 30px;
+  text-align: center;
+  margin: 0 0 2rem 0;
+  font-family: 'fonts';
+}
+
+.slick-dots{
+	margin: 2rem 0 0 0;
+}
+
+.slick-dots li{
+  width: 100px;
+  height: 100px;
+}
+
+.slick-dots li button:before{
+  content: '';
+  width: 60px;
+  height: 60px;
+  margin: 5rem 0;
+  background: url("../img/logo.png") no-repeat;
+  background-size: contain;
+}
+
+.slick-dots li.slick-active button:before{
+  width: 60px;
+  height: 60px;
+  background: url("../img/logo.png") no-repeat;
+  background-size: contain;
+}
+
+.sub-visual{
+  margin: 8rem 0 0 0;
+}
+
+.content,
+.wrap,
+.site-map,
+.goods-upper,
+.goods-lower{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category{
+  width: 20%;
+  margin: auto;
+}
+
+.item-container{
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.item-container li{
+  margin: 1rem 0;
+}
+
+a{
+  font-size: 20px;
+  color: var(--blackcolor);
+  overflow-wrap: break-word;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.ltem-list{
+  width: 80%;
+}
+
+.wrap{
+  padding: 2rem 1rem;
+}
+
+.items{
+  margin: .5rem;
+  width: 100%;
+  height: 20rem;
+}
+
+.items p{
+  height: 3rem;
+  margin: 1rem 0 0 0;
+  font-size: 15px;
+  overflow-wrap: break-word;
+}
+
+.items img{
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.in-btn{
+  width: 100%;
+  text-align: center;
+  background: var(--subcolor);
+  border: var(--subcolor) 1px solid;
+  color: var(--maincolor);
+  padding: .5rem 1rem;
+  margin: 1rem auto 0;
+}
+
+.goods-upper,
+.goods-lower{
+  width: 100%;
+  justify-content: space-around;
+}
+
+.goods img{
+  width: 700px;
+  height: 200px;
+  object-fit: cover;
+  margin: auto;
+}
+
+.goods p{
+  text-align: center;
+  margin: 1rem 0 3rem 0;
+}
+
+footer{
+  height: 20rem;
+  padding: 2rem;
+  font-size: 20px;
+  background-color: var(--subcolor);
+  color: var(--maincolor);
+}
+
+.site-map{
+  text-align: center;
+  justify-content: space-around;
+}
+
+h5{
+  font-size: 20px;
+  margin: 0 0 1rem 0;
+}
+
+.site-map li{
+  margin: .5rem 0;
+}
+
+
+/* tab --------------------------------------*/
+@media screen and (max-width:1024px){
+/* header */
+  .slick-dotted{
+    margin: 0;
+  }
+
+  .slick-dots{
+  	position: absolute;
+    z-index: 20;
+  }
+
+  .slick-dots li{
+    width: 30px;
+    height: 25px;
+  }
+
+  .slick-dots li button:before{
+    width: 30px;
+    height: 25px;
+    margin: 3.5rem 0 0 0;
+  }
+
+  .slick-dots li.slick-active button:before{
+    width: 30px;
+    height: 25px;
+  }
+
+/* modal */
+  .modal-menu{
+    width: 80vw;
+    height: 80vw;
+    top: 20%;
+  }
+
+  .close-btn{
+    width: 20%;
+    top: 85%;
+  }
+
+  .item-list li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .item-list li > div{
+    width: 100%;
+    height: 100%;
+  }
+
+  .item-list img{
+    width: 50%;
+  }
+
+  .count-set{
+    width: 100%;
+  }
+
+  .numeric{
+    width: 20%;
+  }
+
+  .qty{
+    font-size: 20px;
+    margin: 0 2rem;
+    padding: 2rem;
+  }
+
+  article > h1 {
+    font-size: 50px;
+    margin: 0 0 0 5rem;
+  }
+  
+  .content{
+    margin: 3rem auto 0;
+    display: block;
+  }
+
+  .category{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+
+  .ltem-list{
+    display: flex;
+    margin: auto;
+  }
+
+  .wrap{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .goods img{
+    width: 100%;
+  }
+}
+
+
+
+/* mobail */
+@media screen and (max-width:480px){
+/* header---------------------------------*/
+/* gloval-nav */
+  .gloval-nav{
+    height: 3rem;
+  }
+
+  .logo-1{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 0 0 .5rem;
+  }
+
+  .gloval-nav ul{
+    width: 80%;
+    margin: -1rem 0 0 10%;
+  }
+
+  .gloval-nav li{
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .fa-shopping-cart{
+    font-size: 20px;
+  }
+
+  .modal-menu{
+    width: 100vw;
+    height: 120vw;
+    margin: 0;
+  }
+
+  .modal-menu h2{
+    font-size: 20px;
+    margin: 1rem;
+  }
+
+  .modal-menu p{
+    font-size: 18px;
+  }
+
+  .close-btn{
+    width: 30%;
+    margin: 0;
+    font-size: 15px;
+    padding: .5rem;
+  }
+
+  .item-list img{
+    width: 5rem;
+    height: 5rem;
+    margin: 0 1rem;
+  }
+
+  .count-set{
+    width: 100%;
+    margin: auto;
+  }
+
+  .numeric{
+    width: 10%;
+  }
+
+  .qty{
+    margin: 0 1rem;
+    padding: 0;
+  }
+
+  .category{
+    width: 100%;
+  }
+
+  .ltem-list{
+    width: 100%;
+    display: flex;
+    margin: 0;
+  }
+
+  .wrap{
+    width: 50%;
+  }
+
+  .goods-upper,
+  .goods-lower{
+    width: 100%;
+    display: block;
+  }
+
+  .goods img{
+    height: 150px;
+  }
+
+
+  footer{
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0 .5rem 0;
+    font-size: 12px;
+  }
+
+  h5{
+    font-size: 15px;
+  }
+
+
+}

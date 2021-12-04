@@ -1,0 +1,106 @@
+/* concept -------------------------------------*/
+.concept-title{
+  height: 8rem;
+  text-align: center;
+  background-color: var(--consept_color);
+  color: var(--allWhite);
+  font-size: 5rem;
+}
+
+.concept-text{
+  color: var(--consept_color);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 0 2rem;
+  margin: 5rem auto; 
+}
+
+.concept-text div{
+  width: 45%;
+}
+
+.mockup{
+  bottom: 0;
+}
+
+.concept-text h2{
+  font-size: 2rem;
+}
+
+.concept-text h3{
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0 0;
+}
+
+.selecter{
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.selecter > .link-btn {
+  margin: 0;
+}
+
+.selecter > .link-btn + .link-btn {
+  margin-left: 2rem;
+}
+
+@media screen and (max-width:1024px){
+  .concept-title{
+    height: 8rem;
+    text-align: center;
+    background-color: var(--consept_color);
+    color: var(--allWhite);
+    font-size: 5rem;
+  }
+
+  .concept-text{
+    color: var(--consept_color);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 0 2rem;
+    margin: 5rem auto; 
+  }
+
+  .selecter{
+    width: 90%;
+    margin: 5rem auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width:480px){
+  .concept-title{
+    height: 5rem;
+    font-size: 3rem;
+  }
+  
+  .concept-text{
+    display: block;
+    padding: 0;
+    margin: 3rem auto; 
+  }
+  
+  .concept-text div{
+    width: 90%;
+    margin: 0 5%;
+  }
+  
+  .concept-text h2{
+    margin-top: 3rem;
+  }
+
+  .selecter{
+    width: 95%;
+    margin: 5rem auto;
+  }
+
+  .selecter .link-btn{
+    width: 150px;
+  }  
+}
